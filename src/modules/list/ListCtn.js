@@ -1,6 +1,7 @@
 import React, { Component }  from 'react'
-import Loader from '../loader/Loader';
-import List from './List';
+import Loader from '../loader/Loader'
+import List from './List'
+import { parseData } from './listHelpers'
 
 class ListCtn extends Component {
     constructor (props) {
@@ -14,12 +15,11 @@ class ListCtn extends Component {
         }
     }
 
-    fetchList = () => {
-        fetch('https://www.leshabitues.fr/testapi/shops')
-        .then((response) => {
-
-            console.log(response.json())
-          })
+    fetchList = async () => {
+        const response = await fetch('https://www.leshabitues.fr/testapi/shops')
+        const result = await response.json()
+        const list = parseData( result )
+        this.setState({ list })
     }
 
 
@@ -29,7 +29,10 @@ class ListCtn extends Component {
         if (!list) return <Loader/>
 
         return (
-            <List list={list}/>
+            <List
+                list={list}
+                fetchList={this.fetchList}
+            />
         )
     }
 }

@@ -1,8 +1,9 @@
 import React from 'react'
 
-function List() {
+function List({ list, fetchList }) {
   return (
     <div className="List">
+        {list.map(() => {})}
     </div>
   );
 }
