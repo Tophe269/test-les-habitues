@@ -1,6 +1,6 @@
 .App {
-  background-color: #C4C4C4;
-  color: #4A90E2;
+  background-color: #fefefe;
+  color: #C4C4C4;
 }
 
 .Loader-logo {
@@ -20,13 +20,64 @@
 
 /* shop list */
 
-.shop {
+.reload-list {
+  padding: 1em;
+}
+
+.reload-button {
+  background-color: #C4C4C4;
+  color: #4A90E2;
+  border: none;
+}
+
+.shop-list {
+  font-size: 4vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
+.shop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 1em 0;
+  padding: 1em;
+  width: 100%;
+  border-bottom: 1px solid #C4C4C4;
+}
+
 .shop-img {
   width: auto;
-  height: 15vw;
+  height: 22vw;
 }
+
+.shop-name {
+  margin-bottom: .3em;
+  text-transform: uppercase;
+}
+
+.shop-offer {
+  margin-top: .3em;
+  color: #4A90E2;
+}
+
+@media (min-width: 640px) {
+  .shop {
+    width: 50%;
+  }
+  .shop-list {
+    font-size: 14px;
+  }
+  .shop-img {
+    height: 90px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .shop {
+    width: 30%;
+  }
+}
+

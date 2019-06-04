@@ -26,4 +26,8 @@ Récupération des donnée de l'API et formatage des données
 
 ### Shop list display
 
-affichage de la liste des boutiques
+Affichage de la liste des boutiques
+
+### At the end just a little css
+
+Mise en page en responsive
