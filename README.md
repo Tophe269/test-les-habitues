@@ -9,3 +9,7 @@ Création de l'app avec create react app et mise en place du hot module replacem
 ### Folder structure
 
 Réorganisation des composents dans un dossier modules
+
+### shop list components structure
+
+Création d'un dossier list pour les containers et composents d'affichage de liste de boutiques

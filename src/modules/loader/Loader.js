@@ -4,7 +4,7 @@ import logo from '../../logo.svg'
 function Loader() {
   return (
     <div className="Loader">
-      <img src={logo} className="App-logo" alt="logo" />
+      <img src={logo} className="Loader-logo" alt="logo" />
     </div>
   )
 }

@@ -1,6 +1,7 @@
-import React from 'react';
-import '../../App.css';
+import React from 'react'
+import '../../App.css'
 import Loader from '../loader/Loader'
+import ListCtn from '../list/ListCtn';
 
 function App() {
   return (
@@ -8,8 +9,9 @@ function App() {
       <header className="App-header">
         <Loader/>
       </header>
+      <ListCtn />
     </div>
   );
 }
 
-export default App;
+export default App
