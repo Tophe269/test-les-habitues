@@ -9,7 +9,6 @@
   pointer-events: none;
 }
 
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -17,4 +16,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* shop list */
+
+.shop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.shop-img {
+  width: auto;
+  height: 15vw;
 }

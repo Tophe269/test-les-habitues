@@ -1,9 +1,20 @@
 import React from 'react'
+import { getCurrencySymbol } from './listHelpers'
 
 function List({ list, fetchList }) {
   return (
-    <div className="List">
-        {list.map(() => {})}
+    <div className="shop-List">
+        {list.map(({ logo, name, address, zipcode, city, maxoffer, currency, }, index) => (
+            <div key={index} className="shop">
+                <img src={logo} alt={name} className="shop-img" />
+                <div className="shop-desc">
+                    <div className="shop-name">{name}</div>
+                    <div className="shop-adress">{address}</div>
+                    <div className="shop-city">{`${zipcode} ${city}`}</div>
+                    <div className="shop-offer">{`Up to ${maxoffer}${getCurrencySymbol(currency)} offered.`}</div>
+                </div>
+            </div>
+        ))}
     </div>
   );
 }

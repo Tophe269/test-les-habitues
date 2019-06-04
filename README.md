@@ -1,4 +1,6 @@
-## First commit
+## Liste des commit
+
+### First commit
 
 Premier commit
 
@@ -21,3 +23,7 @@ Démarrage deuxième session 21h30
 ### Fetching the API and data parsing
 
 Récupération des donnée de l'API et formatage des données
+
+### Shop list display
+
+affichage de la liste des boutiques
