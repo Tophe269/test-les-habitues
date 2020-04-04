@@ -1,6 +1,5 @@
-export function parseData (data) {
-    const { results } = data
-    return results.map(
+export function parseData ({data}) {
+    return data.map(
         ({ logo, name, address, zipcode, city, maxoffer, currency, }) =>
         ({ logo, name, address, zipcode, city, maxoffer, currency, })
     )

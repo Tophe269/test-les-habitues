@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { getCurrencySymbol } from './listHelpers'
 
 function List({ list, fetchList }) {
   return (
-    <Fragment>
+    <>
         <div className="reload-list">
             <button className="reload-button" onClick={fetchList}>Actualiser la liste</button>
         </div>
@@ -21,7 +21,7 @@ function List({ list, fetchList }) {
             ))}
         </div>
 
-    </Fragment>
+    </>
   )
 }
 

@@ -18,6 +18,7 @@ class ListCtn extends Component {
 
     fetchList = async () => {
         try {
+            debugger
             const response = await fetch('https://www.leshabitues.fr/testapi/shops')
             const result = await response.json()
             const list = parseData( result )
